@@ -1,6 +1,6 @@
 import sys
 import pandas as pd
-def main():
+def topsis():
     if len(sys.argv)!=5:
         raise Exception('Incorrect number of parameters!')
     try:
@@ -55,5 +55,3 @@ def main():
         df1.to_csv(sys.argv[4],index=False)
     except FileNotFoundError:
         print('File not found!')
-if __name__=='__main__':
-    main()
