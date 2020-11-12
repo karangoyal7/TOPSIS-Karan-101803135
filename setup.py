@@ -7,7 +7,7 @@ setup(
   description = 'A python package for Multiple Criteria Decision Making (MCDM) using Topsis',   # Give a short description about your library
   author = 'Karan Goyal',                   # Type in your name
   author_email = 'karandps7@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/karangoyal7',   # Provide either the link to your github or to your website
+  url = 'https://github.com/karangoyal7/TOPSIS-Karan-101803135',   # Provide either the link to your github or to your website
   download_url = 'https://github.com/karangoyal7/TOPSIS-Karan-101803135/archive/v0.1.tar.gz',    # I explain this later on
   keywords = ['TOPSIS', '101803135', 'Karan Goyal'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
