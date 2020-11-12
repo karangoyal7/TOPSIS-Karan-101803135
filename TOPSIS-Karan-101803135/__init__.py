@@ -1,1 +1,1 @@
-from .topsis import main
+from .topsis import topsis 
