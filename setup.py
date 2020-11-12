@@ -1,10 +1,12 @@
 from distutils.core import setup
 setup(
-  name = 'TOPSIS-Karan-101803135',         # How you named your package folder (MyLib)
-  packages = ['TOPSIS-Karan-101803135'],   # Chose the same as "name"
+  name = 'TOPSIS_Karan_101803135',         # How you named your package folder (MyLib)
+  packages = ['TOPSIS_Karan_101803135'],   # Chose the same as "name"
   version = '0.2',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'A python package for Multiple Criteria Decision Making (MCDM) using Topsis',   # Give a short description about your library
+  long_description=README,
+  long_description_content_type="text/markdown",
   author = 'Karan Goyal',                   # Type in your name
   author_email = 'karandps7@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/karangoyal7/TOPSIS-Karan-101803135',   # Provide either the link to your github or to your website
