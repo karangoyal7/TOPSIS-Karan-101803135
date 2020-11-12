@@ -1,11 +1,15 @@
 from distutils.core import setup
+def readme():
+    with open('README.md') as file:
+        README = file.read()
+    return README
 setup(
   name = 'TOPSIS_Karan_101803135',         # How you named your package folder (MyLib)
   packages = ['TOPSIS_Karan_101803135'],   # Chose the same as "name"
   version = '0.3',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'A python package for Multiple Criteria Decision Making (MCDM) using Topsis',   # Give a short description about your library
-  long_description=README,
+  long_description=readme(),
   long_description_content_type="text/markdown",
   author = 'Karan Goyal',                   # Type in your name
   author_email = 'karandps7@gmail.com',      # Type in your E-Mail
