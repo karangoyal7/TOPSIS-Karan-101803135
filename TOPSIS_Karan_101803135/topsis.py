@@ -1,15 +1,13 @@
 import sys
 import pandas as pd
-def topsis():
-    if len(sys.argv)!=5:
-        raise Exception('Incorrect number of parameters!')
+def topsis(inputfile,wt,im,outputfile):
     try:
-        df=pd.read_csv(sys.argv[1])
+        df=pd.read_csv(inputfile)
         if len(df.columns)<3:
             raise Exception('Input file must contain three or more columns!')
         df1=df.copy()
-        weights=sys.argv[2].split(',')
-        impacts=sys.argv[3].split(',')
+        weights=wt.split(',')
+        impacts=im.split(',')
         if len(weights)!=(len(df.columns)-1) or len(impacts)!=(len(df.columns)-1):
             raise Exception('Number of weights,impacts and columns are not same!')
         def find_rss(col):
@@ -52,6 +50,6 @@ def topsis():
         df['S+ + S-']=df['S+']+df['S-']
         df1['Topsis Score']=df['S-']/df['S+ + S-']
         df1['Rank']=df1['Topsis Score'].rank(ascending=False)
-        df1.to_csv(sys.argv[4],index=False)
+        df1.to_csv(outputfile,index=False)
     except FileNotFoundError:
         print('File not found!')
