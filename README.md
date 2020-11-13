@@ -10,19 +10,16 @@ It is a method of compensatory aggregation that compares a set of alternatives b
 ### How to run in command prompt
 
 ```sh
->> topsis <InputDataFile> <Weights> <Impacts> <ResultFileName>
+>> from TOPSIS_Karan_101803135.topsis import topsis
+>> topsis("data.csv","1,1,1,2","+,+,-,+","result.csv")
 ```
 
-### Example
-```sh
->> topsis data.csv "1,1,1,2" "+,+,-,+" result.csv
-```
-### Input File
+### Input File (data.csv)
 1) Input file contain three or more columns
 2) First column is the object/variable name (e.g. M1, M2, M3, M4…...)
 3) From 2nd to last columns contain numeric values only
 
-### Output File
+### Output File (result.csv)
 Result file contains all the columns of input file and two additional columns having
 TOPSIS SCORE and RANK
 
